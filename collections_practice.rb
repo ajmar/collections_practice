@@ -1,1 +1,105 @@
 
+def sort_array_asc(array)
+
+    array.sort do |a, b|
+
+        a <=> b
+
+
+    end
+
+end
+
+def sort_array_desc(array)
+
+    array.sort do |a, b|
+
+        b <=> a
+
+
+    end
+
+end
+
+def sort_array_char_count(array)
+
+    array.sort do |a, b|
+
+        a.length <=> b.length
+
+
+    end
+
+
+end
+
+def swap_elements(array)
+
+    array[-1], array[-2] = array[-2], array[-1]
+
+    array
+
+
+end
+
+def reverse_array(array)
+
+    array = array.reverse
+
+
+end
+
+def kesha_maker(array)
+
+
+    arr = []
+    array.each do |word|
+
+        word.split
+
+        word[2] = "$"
+
+        arr << word
+
+    end
+    return arr
+
+end
+
+
+def find_a(array)
+
+    arr = []
+    array.each do |word|
+
+    if word[0] == "a"
+        arr << word
+    else
+
+     end
+    end
+    return arr
+end
+
+def sum_array(array)
+
+    array.sum
+
+end
+
+def add_s(array)
+        
+    array.each_with_index.map do |word, index|
+
+        if index != 1
+            word << "s"
+        else
+            word
+        end
+
+end
+  
+end
+
+
+
